@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  server:
+    build: ./server
+    ports:
+      - "8000:8000"
+    container_name: iris-api
+    networks:
+      - iris-network
+
+  client:
+    build: ./client
+    ports:
+      - "8501:8501"
+    environment:
+      - API_URL=http://server:8000
+    depends_on:
+      - server
+    container_name: iris-client
+    networks:
+      - iris-network
+
+networks:
+  iris-network:
+    driver: bridge
