@@ -21,7 +21,7 @@ Le projet est composé de deux services Docker :
 - **Frontend (Streamlit)** : Interface utilisateur web
 
 ```
-mlops-td2/
+Prediction_especes_iris/
 ├── server/              # Backend FastAPI
 │   ├── app.py          # API REST
 │   ├── train.py        # Entraînement du modèle
@@ -41,13 +41,14 @@ mlops-td2/
 
 ### Prérequis
 
-- Docker Desktop 
+- Docker Desktop
 
 ### Démarrage
 
-1. Se placer dans le répertoire du projet
+1. Cloner le repository
 ```bash
-cd mlops-td2
+git clone https://github.com/perrineib/Prediction_especes_iris.git
+cd Prediction_especes_iris
 ```
 
 2. Lancer l'application avec Docker compose
@@ -124,4 +125,4 @@ Projet universitaire - MASTER SISE
 
 ##  Auteur
 
-PERRINE IBOUROI 
+PERRINE IBOUROI
