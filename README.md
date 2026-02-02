@@ -1,4 +1,4 @@
-#  Application de Prédiction Iris
+#  🌺 Application de Prédiction Iris 🌺
 
 Cette application basée sur le machine learning sert à prédire les espèces d'iris, elle est développée avec FastAPI et Streamlit, déployée avec Docker.
 
